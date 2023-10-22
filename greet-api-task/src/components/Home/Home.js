@@ -1,13 +1,16 @@
 import React from 'react'
 import ProductCard from '../ProductCard/ProductCard'
+import Category from '../Category/Category'
 
-import './Home.css'
 const Home = () => {
-  return (
-    <div className='home'>
-        <ProductCard/>
-    </div>
-  )
+
+    return (
+        <>
+            <Category />
+            <ProductCard />
+        </>
+
+    )
 }
 
 export default Home
