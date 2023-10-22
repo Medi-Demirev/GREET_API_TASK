@@ -14,7 +14,7 @@ const ProductProvider = ({children}) => {
             const allData = await response.json()
             setData(allData)
         } catch (error) {
-            throw new error
+            throw new Error(error)
           }
        }
         fetchData();
