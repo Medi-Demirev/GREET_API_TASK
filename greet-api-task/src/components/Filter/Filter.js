@@ -15,7 +15,7 @@ import { BsArrowDown } from "react-icons/bs";
 
 
 
-const Category = () => {
+const Filter = () => {
     const { data } = useContext(ProductContext);
     const [category,setCategory] = useState()
 
@@ -140,4 +140,4 @@ const Category = () => {
         </>
     );
 }
-export default Category
+export default Filter

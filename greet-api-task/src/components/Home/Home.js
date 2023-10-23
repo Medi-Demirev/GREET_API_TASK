@@ -1,12 +1,12 @@
 import React from 'react'
 import ProductCard from '../ProductCard/ProductCard'
-import Category from '../Category/Category'
+import Filter from '../Filter/Filter'
 
 const Home = () => {
 
     return (
         <>
-            <Category />
+            <Filter />
             <ProductCard />
         </>
 
