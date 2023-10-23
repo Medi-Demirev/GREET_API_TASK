@@ -67,7 +67,7 @@ This is a link to the source code of the application --> https://github.com/Medi
 
 # Firebase Deploy
 
-This is a link to the deployed application --> 
+This is a link to the deployed application --> https://greet-api-task.web.app/
 
 # Available Scripts
 
