@@ -1,8 +1,75 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project was created as a solution to a task set by the Donatix company in connection with my application for a junior position.The solution to the problem was implemented using the JavaScript framework - React.js
 
-## Available Scripts
+# Project structure
+
+Like any application created with React, this one is located in the directory --> src
+
+The structure is implemented as follows:
+
+-- components
+-- context
+-- App.js
+-- index.css
+-- index.js
+
+## components
+
+### Button
+
+The Button component is created as per the assignment requirement as a reusable component.The main styling of the component is implemented using a separate file --> Button.css.
+
+### Filter
+
+The Filter component was created in order to solve the requirement to create a filtered result according to: category, name and price.Here is implemented the logic through which the data is filtered according to the user's interaction.
+
+### Footer
+
+The footer component was created to give the current project a finished look. Every modern spa app invariably contains a footer section. That is why this component is included in order to meet these requirements. The styling of the component is implemented through a separate file --> Footer.css.
+
+### Home
+
+The component was created as the main component to represent the home page of the application. It is represented by the components - Filter and ProductCard.
+
+### Navigation
+
+Similar to the footer component, the navigation was created as a response to the requirements of a spa application. Because the solution to the given task is implemented by a single page, the navigation does not actually include other elements at the moment. However, if necessary, it can also be added with the help of a react router to implement the navigation between the different pages.
+
+### ProductCard
+
+The component was created to meet the requirement to present the result.
+
+## context
+
+Contexts are created to easily pass data between components.
+
+### Category Context
+
+The logic responsible for sending the request to the server and processing the received response is implemented here. Through the context, the data received from the server is easily forwarded to a component where it can be used as intended.
+
+### Product Context
+
+The logic responsible for sending the request to the server and processing the received response is implemented here. Through the context, the data received from the server is easily forwarded to a component where it can be used as intended.
+
+## App.js && ## index.js
+
+By default, index.js and App.js is where React implements the rendering of the created components.
+
+## index.css
+
+This is where the global styling settings are created.
+
+
+# GitHub repository
+
+This is a link to the source code of the application --> https://github.com/Medi-Demirev/GREET_API_TASK
+
+# Firebase Deploy
+
+This is a link to the deployed application --> 
+
+# Available Scripts
 
 In the project directory, you can run:
 
@@ -11,60 +78,3 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
