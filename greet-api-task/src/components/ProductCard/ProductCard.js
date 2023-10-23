@@ -48,7 +48,7 @@ const ProductCard = (selectedCategory) => {
                                         <CardMedia
                                             sx={{ height: 550 }}
                                             image={product.images.map(x => x.src)}
-                                            title={product.name}
+                                            title={(product.name).replace(/[0-9]/g, '')}
                                         />
                                         </Box>
                                         <Box
@@ -79,7 +79,7 @@ const ProductCard = (selectedCategory) => {
                                                 paddingTop: '8px',
                                                 color: "CaptionText"
                                             }} component="div">
-                                                {product.name}
+                                                {(product.name).replace( /("?<p>)?\[*&#\d{4};\]*(<\/p>\n)?/gm, '')}
                                             </Typography>
                                         </Box>
                                         <Box sx={{
@@ -95,7 +95,7 @@ const ProductCard = (selectedCategory) => {
                                                     WebkitLineClamp: "10",
                                                     WebkitBoxOrient: "vertical",
                                                 }}>
-                                                {(product.short_description).replace(/<(.|\n )*?>/g, '')}
+                                                {(product.short_description).replace(/<(.|\n )*?>/g, '').replace( /("?<p>)?\[*&#\d{4};\]*(<\/p>\n)?/gm, '')}
                                             </Typography>
                                         </Box>
                                         <Box sx={{
@@ -180,7 +180,7 @@ const ProductCard = (selectedCategory) => {
                                             paddingTop: '8px',
                                             color: "CaptionText"
                                         }} component="div">
-                                            {product.name}
+                                            {(product.name.replace( /("?<p>)?\[*&#\d{4};\]*(<\/p>\n)?/gm, ''))}
                                         </Typography>
                                     </Box>
                                     <Box sx={{
@@ -196,7 +196,7 @@ const ProductCard = (selectedCategory) => {
                                                 WebkitLineClamp: "10",
                                                 WebkitBoxOrient: "vertical",
                                             }}>
-                                            {(product.short_description).replace(/<(.|\n )*?>/g, '')}
+                                            {(product.short_description).replace(/<(.|\n )*?>/g, '').replace( /("?<p>)?\[*&#\d{4};\]*(<\/p>\n)?/gm, '')}
                                         </Typography>
                                     </Box>
                                     <Box sx={{
